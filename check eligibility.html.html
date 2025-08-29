@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        var gender= parseInt(prompt("Press 1 for Male And 2 For Female"));
-        if (gender==1){
-            var Experience=parseInt(prompt("Enter Your Working Experience"));
-            if(Experience>=10){
-                document.write("You Are Female With Experience >= 10 Years And Here Is Your Records :");
+        var gender = parseInt(prompt("Press 1 for Male And 2 For Female"));
+        var basicsalary = 50000;
+        if (gender == 1) {
+            var Experience = parseInt(prompt("Enter Your Working Experience"));
+            if (Experience >= 10) {
+                document.write("You Are Male With Experience >= 10 Years And Here Is Your Records :");
                 document.write("Your basic pay salary is = 50,000");
-                document.write("YOUR TA ="+(50000*20)/100);
-                document.write("YOUR DA ="+(50000*40)/100);
-                document.write("YOUR HRA ="+(50000*20)/100);
-            }else{
-             document.write("you are male with working experience less than 10 years so currently not eligble for TA DA and HRA");
-             document.write("Your basic pay salary is = 50,000");
+                document.write("YOUR TA = " + (50000 * 20) / 100);
+                document.write("YOUR DA = " + (50000 * 40) / 100);
+                document.write("YOUR HRA = " + (50000 * 20) / 100);
+            } else {
+                document.write("you are male with working experience less than 10 years so currently not eligble for TA DA and HRA ");
+                document.write(" Your basic pay salary is = " + basicsalary);
             }
-        }else if(gender ==2){
-            var Experience=parseInt(prompt("Enter Your Working Experience"));
-            if(Experience>=5){
+        } else if (gender == 2) {
+            var Experience = parseInt(prompt("Enter Your Working Experience"));
+            if (Experience >= 5) {
                 document.write("You Are Female With Experience >= 5 Years And Here Is Your Records :");
                 document.write("Your basic pay salary is = 50,000");
-                document.write("YOUR TA ="+(50000*15)/100);
-                document.write("YOUR DA ="+(50000*20)/100);
-                document.write("YOUR HRA ="+(50000*15)/100);
-            }else{
-             document.write("you are female with working experience less than 5 years so currently not eligble for TA DA and HRA");
-             document.write("Your basic pay salary is = 50,000");
+                document.write("YOUR TA = " + (50000 * 15) / 100);
+                document.write("YOUR DA = " + (50000 * 20) / 100);
+                document.write("YOUR HRA = " + (50000 * 15) / 100);
+            } else {
+                document.write("you are female with working experience less than 5 years so currently not eligble for TA DA and HRA ");
+                document.write(" Your basic pay salary is = " + basicsalary);
             }
-        }else{
-            document.write("sorry Please Enter Correct No:(0,1)");
+        } else {
+            document.write("sorry Please Enter only 1 for male and 2 for female");
         }
     </script>
 </body>
