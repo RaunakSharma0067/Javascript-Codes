@@ -1,0 +1,28 @@
+<html>
+<body>
+    <script>
+        alert("1->dollar \n 2->rubal \n 3->dinar \n 4->yen");
+        var currency = parseInt(prompt("Please Enter Your Currency Conversion Choice"))
+        if (currency == 1) {
+            document.write("inr to dollar");
+            var indrupees = parseInt(prompt("Please Enter inr value which you want to convert into dollar"))
+            document.write("inr of" + indrupees + "rupees=" + indrupees / 80 + "dollar");
+        } else if (currency == 2) {
+            document.write("inr to rubal");
+            var indrupees = parseInt(prompt("Please Enter inr value which you want to convert into dollar"))
+            document.write("inr of" + indrupees + "rupees=" + indrupees / 68 + "rubal");
+        } else if (currency == 3) {
+            document.write("inr to dinar");
+            var indrupees = parseInt(prompt("Please Enter inr value which you want to convert into dollar"))
+            document.write("inr of" + indrupees + "rupees=" + indrupees / 72 + "dinar");
+        } else if (currency == 4) {
+            document.write("inr to yen");
+            var indrupees = parseInt(prompt("Please Enter inr value which you want to convert into dollar"))
+            document.write("inr of" + indrupees + "rupees=" + indrupees / 47 + "yen");
+        }
+        else {
+            document.write("Enter only correct preference from list");
+        }
+    </script>
+</body>
+</html>
